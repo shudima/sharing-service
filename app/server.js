@@ -85,8 +85,10 @@ function buildLink(key) {
 }
 
 function startService(app) {
-	app.listen(process.env.PORT || config.serverPort, function () {
-  		console.log('Listening on ' + config.serverPort);
+
+	var port = process.env.PORT || config.serverPort
+	app.listen(port, function () {
+  		console.log('Listening on ' + port);
 	});
 }
 
