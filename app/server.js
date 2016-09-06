@@ -20,7 +20,7 @@ function createApp(redisSharingStore) {
 	var app = express();
 	var parser = bodyParser.urlencoded({ extended: true });
 
-	app.use(express.static('../client'));
+	app.use(express.static(__dirname + '../client'));
 
 	app.post('/upload-file/', function (req, res) {
 		console.log('Setting new file');
@@ -85,7 +85,7 @@ function buildLink(key) {
 }
 
 function startService(app) {
-	app.listen(config.serverPort, function () {
+	app.listen(process.env.PORT || config.serverPort, function () {
   		console.log('Listening on ' + config.serverPort);
 	});
 }
