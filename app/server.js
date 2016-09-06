@@ -20,7 +20,7 @@ function createApp(redisSharingStore) {
 	var app = express();
 	var parser = bodyParser.urlencoded({ extended: true });
 
-	app.use(express.static(__dirname + '../client'));
+	app.use(express.static(__dirname + '/../client'));
 
 	app.post('/upload-file/', function (req, res) {
 		console.log('Setting new file');
