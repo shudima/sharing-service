@@ -25,7 +25,7 @@ curl -F curl _F "password={OPTIONAL_PASSWORD}" -F "file=@./path/to/file" http://
 Or upload using this page:
 ```sh
 http://hostname:port/upload.htm
-'''
+```
 
 This will return an http link like this one:
 ```sh
