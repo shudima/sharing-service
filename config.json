@@ -1,6 +1,6 @@
 {
 	"serverPort" : 3000,
-	"serverHost" : "sharing-service.herokuapp.com",
+	"downloadLinkPrefix" : "http://sharing-service.herokuapp.com/file/",
 	"redisSharingStoreConfig" : {
 			"redisHost" : "pub-redis-10699.us-east-1-1.1.ec2.garantiadata.com",
 			"redisPort" : "10699"	

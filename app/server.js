@@ -81,7 +81,7 @@ function createApp(redisSharingStore) {
 }
 
 function buildLink(key) {
-	return 'http://' + config.serverHost + ':' + config.serverPort + '/file/' + key;
+	return config.downloadLinkPrefix + key;
 }
 
 function startService(app) {
