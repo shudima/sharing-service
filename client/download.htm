@@ -1,0 +1,24 @@
+<html>
+	<head>
+		<title>Download File</title>
+	</head>
+	<body>
+		<form method="post" action="/file">
+			Password:&nbsp;<input type="password" name="password" />&nbsp;
+			<input type="hidden" id="key" name="key" value="key_value"/>
+			<input type="submit" name="submit" value="Submit">
+		</form>
+	</body>
+	<script>
+
+		function getParameterByName(name) {
+		    name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+		    var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+		    results = regex.exec(location.search);
+		    return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+		}
+
+		document.getElementById('key').value = getParameterByName('key');
+	</script>
+</html>
+

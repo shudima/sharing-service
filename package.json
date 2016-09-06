@@ -1,0 +1,28 @@
+{
+  "name": "sharing-service",
+  "version": "1.0.0",
+  "description": "Scalable File Sharing service",
+  "main": "app/server.js",
+  "directories": {
+    "test": "tests"
+  },
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "chai": "^3.5.0",
+    "express": "^4.14.0",
+    "mocha": "^3.0.2",
+    "redis": "^2.6.2",
+    "redis-mock": "^0.11.0",
+    "redis-streams": "^1.1.0",
+    "sinon": "^1.17.5",
+    "stream": "0.0.2",
+    "uuid": "^2.0.2"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "./node_modules/.bin/mocha ./tests/*.js",
+    "start": "node app/server.js"
+  },
+  "author": "Dima Shulga <shudima@gmail.com>",
+  "license": "ISC"
+}

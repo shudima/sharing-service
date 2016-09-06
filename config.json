@@ -1,0 +1,8 @@
+{
+	"serverPort" : 3000,
+	"serverHost" : "localhost",
+	"redisSharingStoreConfig" : {
+			"redisHost" : "192.168.56.101",
+			"redisPort" : "6379"	
+	}
+}
