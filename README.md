@@ -31,14 +31,14 @@ This will return an http link like this one:
 ```sh
 http://hostname:port/file/82f15aa0-7367-11e6-b781-19d81b21e561
 ```
- Use this link to download the file (it will ask for password if needed).
-
- * Note: If wrong password is used, the file will be downloaded but won't be decrypted right
+Use this link to download the file (it will ask for password if needed).
+You will be redirected if password is required.
  
 ### Notes
   - The link expires after 24 hours
   - The password is optional
   - Default port is 3000, you can change it in config.json
+  - If worng password is used for downloading, the file will be downloaded but wil contain junk
 
 
 ### Architecture
